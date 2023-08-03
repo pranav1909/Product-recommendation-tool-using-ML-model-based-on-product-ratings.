@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personalize your Gift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3c1463735c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
+
+<body>
+    <div id="title">Personalize your Gift</div>
+    <div id="main">
+        <div id="filter"> 
+            <div id="filter_title">Filter</div>
+            <section class="main_container">
+                <nav class="nav">
+                    <ul></ul>
+                </nav>
+            </section>
+        </div>
+
+        <div id="middle">
+            <div id="recommended_items"></div>
+            <div id="items">
+                <!-- <div class="product">
+                    <div class="image_url"><img src="Ceramic_Coffee_Mug_01.jpg"></div>
+                    <div class="image_caption">Cup</div>
+                    <div class="price">Price Rs: 250</div>
+                </div> -->
+            </div>
+        </div>
+
+        <div id="cart">
+            <div id="cart_title">Cart</div>
+            <div id="cartItem"></div>
+            <div class="foot">
+                <div id="count"></div>
+                <h3>Total</h3>
+                <h2 id="total">Rs 0.00</h2>
+            </div>
+        </div>
+    </div>
+    <script src="addToCart.js"></script>
+</body>
+
+</html>
